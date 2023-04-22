@@ -15,7 +15,7 @@ const App = () => {
             <div className="h-screen w-screen font-body">
                 <NavBar />
                 {/* TODO: que utilidad tiene el relative  */}
-                <main className="relative">
+                <main className="h-full w-full">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route
