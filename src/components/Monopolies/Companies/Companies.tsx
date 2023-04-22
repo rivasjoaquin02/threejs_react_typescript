@@ -14,7 +14,8 @@ const Companies = ({ company, id }: { company: CompaniesType; id: number }) => {
     return (
         <>
             <ElipsesBg colors={colors} />
-            <div className="box-border flex h-full sm:flex-col md:flex-row ">
+            {/* TODO: cambiar a grid */}
+            <div className="flex  sm:flex-col md:flex-row px-10 ">
                 <Info name={name} description={description} website={website} />
                 <MiddleSection scenes={scenes} id={id} />
                 <Metrics metrics={metrics} colors={colors} />
