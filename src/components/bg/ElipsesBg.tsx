@@ -2,7 +2,7 @@ const ElipsesBg = ({ colors }: { colors: Array<string> }) => {
     console.log(colors);
 
     return (
-        <div className="relative">
+        <div className="relative z-[-1]">
             <div
                 key="1"
                 className={`top-30 absolute left-96 h-52 w-52 rounded-full ${colors[0]} blur-[150px] `}
