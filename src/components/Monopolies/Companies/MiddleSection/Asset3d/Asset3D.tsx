@@ -144,10 +144,10 @@ const Asset3d_old = ({ scenes }: { scenes: Array<SceneType> }) => {
             scenes[0].path,
             { x: 0.1, y: 0.1, z: 0.1 },
             { x: 0, y: -5, z: 0 },
-            "apple"
+            "matilda"
         );
         loadCube(scene, { x: 1, y: 1, z: 1 }, { x: 0, y: 0, z: 0 }, "cube");
-        const matilda = scene.getObjectByName("apple");
+        const matilda = scene.getObjectByName("matilda");
         const cube = scene.getObjectByName("cube");
 
         /* light */
@@ -168,9 +168,10 @@ const Asset3d_old = ({ scenes }: { scenes: Array<SceneType> }) => {
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
 
-            matilda?.rotateY(0.01);
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
+            
+            matilda?.rotateX(0.01);
+            // cube?.rotateX(0.01);
+            cube?.rotateY(0.01);
         };
 
         animate();
@@ -180,8 +181,8 @@ const Asset3d_old = ({ scenes }: { scenes: Array<SceneType> }) => {
             width = currentRef?.clientWidth;
             height = currentRef?.clientHeight;
 
-            renderer.setSize(updatedWidht, updatedHeight);
-            camera.aspect = updatedWidht / updatedHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
             camera.updateProjectionMatrix();
         };
         window.addEventListener("resize", onWindowResize);
@@ -193,7 +194,7 @@ const Asset3d_old = ({ scenes }: { scenes: Array<SceneType> }) => {
         };
     }, []);
 
-    return <div ref={mountRef} className=" h-full w-full" />;
+    return <div ref={mountRef} className="aspect-square" />;
 };
 
 export default Asset3d_old;

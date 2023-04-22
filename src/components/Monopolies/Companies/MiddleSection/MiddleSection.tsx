@@ -10,10 +10,8 @@ const MiddleSection = ({
     id: number;
 }) => {
     return (
-        <div className="h-full flex flex-col grow md:pl-10 lg:p-10" >
-            <div className="aspect-square bg-gray-600 ">
-                {/* <Asset3D scenes={scenes} /> */}
-            </div>
+        <div className="flex h-full grow flex-col md:pl-10 lg:p-10">
+            <Asset3D scenes={scenes} />
             <ActiveBar id={id} />
         </div>
     );

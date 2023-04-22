@@ -26,7 +26,7 @@ const Metrics = ({
     }, []);
 
     return (
-        <div className="mt-10 sm:hidden md:block lg:w-[250px]">
+        <div className="mt-10 sm:hidden lg:block lg:w-[250px]">
             <ul>
                 {widths.map((width, idx) => {
                     return (
