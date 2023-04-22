@@ -7,6 +7,7 @@ const NavBar = () => {
                 <Link to="/">WebPage Title</Link>
             </h1>
             <ul className="flex">
+                {/* TODO: fix border-b */}
                 <li className="mx-4 border-b font-semibold hover:text-gray-200">
                     <Link to="/">Inicio</Link>
                 </li>

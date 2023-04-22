@@ -14,6 +14,7 @@ const App = () => {
             {/* TODO: fix h-screen */}
             <div className="h-screen w-screen font-body">
                 <NavBar />
+                {/* TODO: que utilidad tiene el relative  */}
                 <main className="relative">
                     <Routes>
                         <Route path="/" element={<Home />} />
