@@ -8,7 +8,7 @@ const Info = ({
     website: string;
 }) => {
     return (
-        <div className="z-10 min-h-[280px] flex-none px-10 pt-11 text-gray-400 md:w-[400px] ">
+        <div className="min-h-[280px] flex-none  pt-11 text-gray-400 md:w-[400px]">
             <h1 className="border-b pb-3 text-5xl font-semibold">{name}</h1>
             <p className="sm:my-6 md:my-10">{description}</p>
             <a

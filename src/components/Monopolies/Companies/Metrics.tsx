@@ -9,7 +9,7 @@ const Metrics = ({
     colors: Array<string>;
 }) => {
     const [widths, setWidths] = useState<Array<string>>(
-        Array(5).fill("w-[250px]")
+        Array(4).fill("w-[250px]")
     );
 
     // TODO: what is the error
@@ -26,13 +26,13 @@ const Metrics = ({
     }, []);
 
     return (
-        <div className="z-10 mt-10  px-6 sm:hidden md:hidden lg:block lg:w-[250px]">
+        <div className="mt-10 sm:hidden lg:block lg:w-[250px]">
             <ul>
                 {widths.map((width, idx) => {
                     return (
                         <li
                             key={idx}
-                            className={`my-5 h-10 ${width} max-w-full rounded-l-xl ${colors[idx]} backdrop-blur-sm  shadow-xl hover:shadow-gray-800`}
+                            className={`my-10 h-10 ${width} rounded-l-xl ${colors[idx]} shadow-xl  hover:shadow-gray-800`}
                         ></li>
                     );
                 })}
