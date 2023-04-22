@@ -1,15 +1,8 @@
 import ElipsesBg from "../bg/ElipsesBg";
 
-const AUTHORS = [
-    { name: "Joaquin Rivas", credits: "Web Dev", avatar: "", univ: "UCI" },
-    {
-        name: "Naylin Brizuela",
-        credits: "Designer, UI/UX",
-        avatar: "",
-        univ: "UCI",
-    },
-    { name: "Juan Diego", credits: "3d Artist", avatar: "", univ: "UCI" },
-];
+import AUTHORS from "../../data/authors.json";
+
+// TODO: quitar colors
 const COLORS = ["bg-green-500", "bg-yellow-400", "bg-red-500", "bg-blue-400"];
 
 const Credits = () => {
