@@ -10,8 +10,8 @@ const MiddleSection = ({
     id: number;
 }) => {
     return (
-        <div className="box-border h-screen grow lg:p-10" id="asset3d">
-            <div className="sm:h-[450px] sm:w-full lg:max-h-[750px] lg:w-full bg-gray-600">
+        <div className="h-full flex flex-col grow md:pl-10 lg:p-10" >
+            <div className="aspect-square bg-gray-600 ">
                 {/* <Asset3D scenes={scenes} /> */}
             </div>
             <ActiveBar id={id} />
