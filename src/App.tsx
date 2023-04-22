@@ -14,7 +14,7 @@ const App = () => {
             {/* TODO: fix h-screen */}
             <div className="h-screen w-screen font-body">
                 <NavBar />
-                <main className="relative h-screen w-screen">
+                <main className="relative">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route
