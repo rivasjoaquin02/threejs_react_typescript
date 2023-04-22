@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "name": "Apple Inc.",
+        "aka": "apple",
+        "description": "Apple Inc. es una empresa multinacional estadounidense de tecnología que diseña, desarrolla y vende productos electrónicos, software y servicios en línea.",
+        "website": "https://www.apple.com",
+        "metrics": [
+            { "product": "iphone", "units": 19500000, "year": 2022 },
+            { "product": "ipad", "units": 9750000, "year": 2022 },
+            { "product": "mac", "units": 10750000, "year": 2022 },
+            { "product": "accesorios", "units": 6750000, "year": 2022 }
+        ],
+        "scenes": [
+            { "name": "logo", "path": "/src/assets/apple/logo.glb" },
+            {
+                "name": "iphone",
+                "path": "/src/assets/apple/iphone.glb"
+            },
+            { "name": "macbook", "path": "/src/assets/apple/macbook.glb" }
+        ],
+
+        "colors": [
+            "bg-[#C7C7CC]",
+            "bg-[#434447]",
+            "bg-[#D6AF52]",
+            "bg-purple-400"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Microsoft Corporation",
+        "aka": "microsoft",
+        "description": "Microsoft Corporation es una empresa multinacional de tecnología de origen estadounidense que desarrolla, licencia y vende software, electrónica de consumo, hardware y servicios de computación en la nube.",
+        "website": "https://www.microsoft.com",
+        "metrics": [
+            { "product": "Windows", "units": 1100000000, "year": 2021 },
+            { "product": "Office", "units": 200000000, "year": 2021 },
+            { "product": "Xbox", "units": 66000000, "year": 2021 },
+            { "product": "Azure", "units": 2000000, "year": 2021 }
+        ],
+        "scenes": [
+            { "name": "logo", "path": "/src/assets/microsoft/logo.glb" },
+            {
+                "name": "office",
+                "path": "/src/assets/microsoft/office.glb"
+            },
+            { "name": "xbox", "path": "/src/assets/microsoft/xbox.glb" }
+        ],
+        "colors": ["bg-red-400", "bg-blue-400", "bg-yellow-400", "bg-green-400"]
+    },
+    {
+        "id": 3,
+        "name": "Amazon.com, Inc.",
+        "aka": "Amazon",
+        "description": "Amazon.com, Inc. es una empresa multinacional de tecnología de origen estadounidense que se enfoca en el comercio electrónico, la computación en la nube, la inteligencia artificial y la producción digital de contenido.",
+        "website": "https://www.amazon.com",
+        "metrics": [
+            { "product": "e-commerce", "units": 38600000000, "year": 2021 },
+            {
+                "product": "Amazon Web Services",
+                "units": 46000000,
+                "year": 2021
+            },
+            { "product": "Prime Video", "units": 200000000, "year": 2021 },
+            { "product": "Alexa", "units": 500000000, "year": 2021 }
+        ],
+        "scenes": [
+            { "name": "logo", "path": "/src/assets/amazon/logo.glb" },
+            {
+                "name": "alexa",
+                "path": "/src/assets/amazon/alexa.glb"
+            },
+            { "name": "prime", "path": "/src/assets/amazon/prime.glb" }
+        ],
+        "colors": ["bg-blue-400", "bg-black", "bg-yellow-400", "bg-yellow-400"]
+    }
+]
